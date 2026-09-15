@@ -1,1 +1,16 @@
-
+{
+  "name": "strveon-bot-builder",
+  "version": "2.0.0",
+  "description": "بوت تيليجرام لصناعة وإدارة بوتات أخرى بالكامل من داخل تيليجرام",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "telegraf": "^4.16.3",
+    "better-sqlite3": "^11.3.0",
+    "express": "^4.19.2",
+    "dotenv": "^16.4.5"
+  }
+}
