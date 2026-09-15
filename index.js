@@ -14,13 +14,11 @@ app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
 
 app.listen(PORT, async () => {
   console.log(`🚀 سيرفر الفحص الصحي يعمل على المنفذ ${PORT}`);
-
   try {
     await botManager.startAllActive();
   } catch (err) {
     console.error('خطأ أثناء تشغيل البوتات النشطة تلقائياً:', err.message);
   }
-
   await bot.launch();
   console.log('🤖 بوت الصانع (Creator Bot) يعمل الآن ويستقبل الرسائل.');
 });
